@@ -1,15 +1,18 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <ctype.h>
 
 int main()
 {
+    printf("\n----------------------------------------");
     printf("\nWelcome to my temperature converter!\n");               //Just a Welcome line
-    printf("By BrunoMagno\n\n");
+    printf("By BrunoMagno");
+    printf("\n----------------------------------------");
 
     char unit;                                                        //line 9 - 10 are the Code's variables 
     float temp;
  
-    printf("Is the value in (F)fahrenheit or (C)celsius?\n");         //Here the user will choice between 'F' and 'C' to convert to another temperature
+    printf("\n\nIs the value in (F)fahrenheit or (C)celsius?\n");         //Here the user will choice between 'F' and 'C' to convert to another temperature
     scanf("%c",&unit);                                     
     unit= toupper(unit);                                              //c-->C | f-->F
 
@@ -30,6 +33,8 @@ int main()
     } else{
         printf("insert a valid value");                              //this message appear if the user don't choice between F/C in the line 13
     }
-    
-    printf("\n\nThank you for using me");
+
+    printf("\n\nPress Enter to Exit\n");
+    system("pause");
+    return 0;
 }
