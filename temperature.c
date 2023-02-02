@@ -30,6 +30,6 @@ int main()
     } else{
         printf("insert a valid value");                              //this message appear if the user don't choice between F/C in the line 13
     }
-    sleep(200)
+    
     printf("\n\nThank you for using me");
 }
